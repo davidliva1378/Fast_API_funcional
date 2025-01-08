@@ -148,6 +148,4 @@ def recomendacion_ml(titulo: str, n_recomendaciones: int = 5) -> list:
     recomendaciones = movies_df.iloc[indices_similares]['title'].tolist()
     return recomendaciones
 
-# Ejemplo de recomendación
-resultado = recomendacion_ml("toy story", n_recomendaciones=5)
-print("Recomendaciones:", resultado)
+
